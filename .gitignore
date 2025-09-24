@@ -1,0 +1,134 @@
+# PSMD Diagnostics - Git Ignore File
+
+# Log files
+*.log
+psmd_diag_*.log
+psmd_mode_*.log
+psmd_precheck.txt
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# Clean files (generated during processing)
+*.clean
+
+# Results and output files
+psmd_results.csv
+.psmd_results.tmp
+
+# DTI processing outputs (fallback mode)
+b0.nii.gz
+b0_mask0.nii.gz
+b0_brain_mask.nii.gz
+dti_*.nii.gz
+dti_*.nii
+
+# Docker and container files
+.dockerignore
+docker-compose*.yml
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Compressed files (if not needed in repo)
+*.zip
+*.tar.gz
+*.tar.bz2
+*.7z
+
+# Dataset directories
+/data/
+/datasets/
+/subjects/
+/PSMD/
+/processed_subjects*/
+*_subjects*/
+*_subjects*.zip
+
+# Specific dataset folders (Maria Clara dataset)
+/maria_clara/
+/processed_subjects_new/
+/processed_subjects_rerun/
+
+# Subject directories (all Subject_* folders)
+/Subject_*/
+Subject_*/
+
+# PSMD processing outputs
+psmdtemp/
+psmdtemp/
+*.msf
+*.1
+stats/
+
+# DTI processing files
+dti_*.nii.gz
+dti_*.nii
+b0*.nii.gz
+b0*.nii
+*_brain_mask.nii.gz
+*_mask0.nii.gz
+
+# Clean files (generated during processing)
+*.clean
+
+# Result archives
+*_resultado.zip
+*_results.zip
+PSMD.zip
+
+# Excel results
+*.xls
+*.xlsx
+
+# JSON metadata files
+*.json
+
+# Python cache (if any Python scripts are added)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# R cache (if any R scripts are added)
+.Rhistory
+.RData
+.Ruserdata
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Node modules (if any web interface is added)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Documentation build files
+docs/_build/
+site/

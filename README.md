@@ -1,4 +1,4 @@
-# Robust PSMD Diagnostics (v5.3)
+# PSMD Pipeline Automation (v5.3)
 
 **Author:** Julio Cesar Nather Junior  
 **Date:** September 2025
